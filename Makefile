@@ -17,7 +17,7 @@ $(MLX) :
 	make -sC ./minilibx
 
 $(NAME) : $(OBJS) $(GNLOBJS)
-	gcc -g $(OBJS) $(GNLOBJS) $(LFLAGS) ./libft/libft.a ./printf/libftprintf.a -o $(NAME)
+	gcc $(OBJS) $(GNLOBJS) $(LFLAGS) ./libft/libft.a ./printf/libftprintf.a -o $(NAME)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
