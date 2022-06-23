@@ -12,16 +12,6 @@
 
 #include "minlbx.h"
 
-int	str_len(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
 void	player_control(t_win *pnc)
 {
 	int	i;
@@ -85,7 +75,7 @@ void	map_size_control(t_win *pnc)
 	len = pnc->map->w;
 	while (pnc->map->mappin[i])
 	{
-		if (str_len(pnc->map->mappin[i]) != len)
+		if (ft_strlen(pnc->map->mappin[i]) != len)
 		{
 			write(1, "Line Size Error", 16);
 			close_frame(pnc);
