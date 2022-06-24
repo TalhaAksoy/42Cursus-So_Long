@@ -6,7 +6,7 @@
 /*   By: saksoy <saksoy@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 14:55:45 by saksoy            #+#    #+#             */
-/*   Updated: 2022/06/20 09:22:24 by saksoy           ###   ########.fr       */
+/*   Updated: 2022/06/24 14:45:28 by saksoy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,4 +75,7 @@ void	endln_control(char line);
 void	coin_control(t_win *pnc);
 void	file_control(char *path);
 void	char_control(t_win *pnc);
+void	xpm_control(void);
+void	xpm_control_two(void);
+void	path_checker(char *path);
 #endif

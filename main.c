@@ -6,7 +6,7 @@
 /*   By: saksoy <saksoy@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 13:30:34 by saksoy            #+#    #+#             */
-/*   Updated: 2022/06/20 09:48:12 by saksoy           ###   ########.fr       */
+/*   Updated: 2022/06/24 15:07:42 by saksoy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,9 @@ int	main(int argc, char **argv)
 
 	if (argc == 2)
 	{
+		xpm_control();
+		xpm_control_two();
+		path_checker(argv[1]);
 		file_control(argv[1]);
 		open_windows(&pnc, argv[1]);
 		render_map(&pnc);
